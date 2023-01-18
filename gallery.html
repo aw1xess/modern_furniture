@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Fonts Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <title>Photo reviews</title>
+  </head>
+  <body class="body">
+    <header class="header" id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-sm-4">
+            <div class="logo1">
+              <a href="./index.html"
+                ><img src="img/icons/logo1.svg" alt="uCom"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-3">
+            <div class="list">
+              <ul>
+                <li class="link"><a href="./index.html">Home</a></li>
+                <li class="link"><a href="./catalog.html">Catalog</a></li>
+                <li class="link"><a href="./about.html">About us</a></li>
+                <li class="link"><a href="#footer">Contacts</a></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-md-1 offset-md-4 offset-sm-2 col-sm-3 d-flex justify-content-end be-static"
+          >
+            <div class="bucket">
+              <img src="img/icons/Bucket.png" alt="Bucket" />
+            </div>
+            <div class="burger"><span></span></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="heading">
+        <h2>Photo reviews</h2>
+      </div>
+      <div class="photos">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="./img/gallery_smallphoto1.png" alt="Photo 1" />
+          </div>
+          <div class="col-md-4">
+            <img src="./img/gallery_smallphoto2.png" alt="Photo 2" />
+          </div>
+          <div class="col-md-4">
+            <img src="./img/gallery_smallphoto3.png" alt="Photo 3" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="./img/gallery_largephoto1.png" alt="Photo 4" />
+          </div>
+          <div class="col-md-6">
+            <img src="./img/gallery_largephoto2.png" alt="Photo 5" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="./img/gallery/gallery_largephoto3.png" alt="Photo 6" />
+          </div>
+          <div class="offset-md-1 col-md-7 large">
+            <img src="./img/gallery/gallery_largephoto4.png" alt="Photo 7" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <img src="./img/gallery/gallery_largephoto5.png" alt="Photo 8" />
+          </div>
+          <div class="col-md-5">
+            <img src="./img/gallery/gallery_smallphoto4.png" alt="Photo 9" />
+          </div>
+        </div>
+      </div>
+      <div class="center">
+        <button class="transparent__button load-button">Load more</button>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="footer__line"></div>
+        <div class="row">
+          <div class="col-md-2 mobile-hide">
+            <img src="img/icons/Full_logo.svg" alt="Logo" />
+          </div>
+          <div class="col-md-2 mobile-hide">
+            <h4>Information</h4>
+            <div class="line_height">
+              <a href="./about.html"><p>About Us</p></a>
+              <p>Contacts</p>
+              <p>Social</p>
+            </div>
+          </div>
+          <div class="col-md-1 mobile-hide">
+            <h4>Offers</h4>
+            <div class="line_height">
+              <a href="./index.html"><p>Home</p></a>
+              <a href="./catalog.html"><p>Catalog</p></a>
+            </div>
+          </div>
+          <div class="offset-md-1 col-md-2">
+            <div class="footer__social">
+              <a href="https://twitter.com"
+                ><img src="img/icons/twitter.svg" alt="Twitter"
+              /></a>
+              <a href="https://facebook.com"
+                ><img src="img/icons/facebook.svg" alt="Facebook"
+              /></a>
+              <a href="https://youtube.com"
+                ><img src="img/icons/youtube.svg" alt="YouTube"
+              /></a>
+            </div>
+          </div>
+          <div
+            class="offset-md-1 col-md-3 d-flex align-items-end flex-column mobile-center"
+          >
+            <h3 class="footer__address">Le Parc De Manon 3 floor</h3>
+            <div class="line_height">
+              <p>+38 (099) 11 22 333</p>
+              <p>+38 (093) 22 44 555</p>
+            </div>
+            <p class="footer__mail">uCom_Marsel@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/gallery.js"></script>
+  </body>
+</html>

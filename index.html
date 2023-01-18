@@ -14,49 +14,51 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="slick/slick.css" />
     <link rel="stylesheet" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Modern Furniture</title>
   </head>
-  <body>
+  <body class="body">
     <header class="header" id="header">
       <div class="container">
         <div class="row">
-          <div class="col-md-2">
+          <div class="col-md-2 col-sm-4">
             <div class="logo1">
-              <img src="img/icons/logo1.svg" alt="uCom" />
-              <!--<span class="line"></span>
-                <div class="name">uCom</div>-->
+              <a href="./index.html"
+                ><img src="img/icons/logo1.svg" alt="uCom"
+              /></a>
             </div>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 col-sm-3">
             <div class="list">
               <ul>
-                <li class="link"><a href="#header">Home</a></li>
-                <li class="link"><a href="#catalog">Catalog</a></li>
-                <li class="link"><a href="#aboutus">About us</a></li>
+                <li class="link"><a href="./index.html">Home</a></li>
+                <li class="link"><a href="./catalog.html">Catalog</a></li>
+                <li class="link"><a href="./about.html">About us</a></li>
                 <li class="link"><a href="#footer">Contacts</a></li>
               </ul>
             </div>
           </div>
-          <div class="col-md-5 d-flex justify-content-end be-static">
+          <div
+            class="col-md-1 offset-md-4 offset-sm-2 col-sm-3 d-flex justify-content-end be-static"
+          >
             <div class="hero">
               <div class="grey_rect"></div>
-                  <img
-                    src="img/chair_green.png"
-                    alt="Green chair"
-                    class="green_chair"
-                  />
+              <img
+                src="img/chair_green.png"
+                alt="Green chair"
+                class="green_chair"
+              />
               <img src="img/Lamps.png" alt="Lamps" class="lamps" />
             </div>
-
             <div class="bucket">
               <img src="img/icons/Bucket.svg" alt="Bucket" />
             </div>
+            <div class="burger"><span></span></div>
           </div>
         </div>
-        <!---->
         <div class="row">
           <div class="col-md-6">
             <div class="about">
@@ -65,12 +67,19 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-12">
             <p class="about__text">
               Dolor sit amet, consectetur adipiscing jorem ipsum dia sint.
             </p>
-            <button class="filled_button">Show catalog</button>
+            <a href="./catalog.html"
+              ><button class="filled_button">Show catalog</button></a
+            >
           </div>
+          <img
+            src="img/chair_green.png"
+            alt="Green chair"
+            class="display-mobile"
+          />
         </div>
         <div class="row">
           <div class="col-md-1 offset-md-11">
@@ -104,82 +113,104 @@
             class="col-md-7 d-flex justify-content-between align-items-center"
           >
             <h2 class="catalog__header">Catalog</h2>
-            <a href="#" class="catalog__links">Sofas</a>
-            <a href="#" class="catalog__links">Armchairs</a>
-            <a href="#" class="catalog__links">Beds</a>
-            <a href="#" class="catalog__links">Lamps</a>
+            <div class="catalog__list">
+              <div class="list__items">
+                <p class="list-item">Armchairs</p>
+                <p class="list-item item-selected">Armchairs</p>
+                <p class="list-item">Sofas</p>
+                <p class="list-item">Beds</p>
+                <p class="list-item">Lamps</p>
+              </div>
+              <img src="img/icons/arrow_down.svg" alt="" class="arrow-down" />
+            </div>
+
+            <a href="#" class="catalog__links mobile-none">Sofas</a>
+            <a href="#" class="catalog__links mobile-none">Armchairs</a>
+            <a href="#" class="catalog__links mobile-none">Beds</a>
+            <a href="#" class="catalog__links mobile-none">Lamps</a>
           </div>
         </div>
         <div class="row">
           <div class="catalog__slider">
-          <div class="col-md-4">
-            <div class="catalog__card1">
-              <div class="catalog__card1__img">
-                <img src="img/card1_chair.png" alt="chair1" />
-              </div>
-              <div class="catalog__card1__header">
-                <h3>Article Armchair</h3>
-                <p>259 €</p>
-              </div>
+            <div class="col-md-4">
+              <a href="./card.html">
+                <div class="catalog__card1">
+                  <div class="catalog__card1__img">
+                    <img src="img/card1_chair.png" alt="chair1" />
+                  </div>
+                  <div class="catalog__card1__header">
+                    <h3>Article Armchair</h3>
+                    <p>259 €</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="./card.html">
+                <div class="catalog__card1">
+                  <div class="catalog__card1__img">
+                    <img src="img/card2_chair.png" alt="chair1" />
+                  </div>
+                  <div class="catalog__card1__header">
+                    <h3>Loft Armchair</h3>
+                    <p>219 €</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <a href="./card.html">
+                <div class="catalog__card1">
+                  <div class="catalog__card1__img">
+                    <img src="img/card3_chair.png" alt="chair1" />
+                  </div>
+                  <div class="catalog__card1__header">
+                    <h3>Grey Armchair</h3>
+                    <p>329 €</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <a href="./card.html">
+                <div class="catalog__card1">
+                  <div class="catalog__card1__img">
+                    <img src="img/card1_chair.png" alt="chair1" />
+                  </div>
+                  <div class="catalog__card1__header">
+                    <h3>Article Armchair</h3>
+                    <p>259 €</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <a href="./card.html">
+                <div class="catalog__card1">
+                  <div class="catalog__card1__img">
+                    <img src="img/card2_chair.png" alt="chair1" />
+                  </div>
+                  <div class="catalog__card1__header">
+                    <h3>Loft Armchair</h3>
+                    <p>219 €</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <a href="./card.html">
+                <div class="catalog__card1">
+                  <div class="catalog__card1__img">
+                    <img src="img/card3_chair.png" alt="chair1" />
+                  </div>
+                  <div class="catalog__card1__header">
+                    <h3>Grey Armchair</h3>
+                    <p>329 €</p>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="catalog__card1">
-              <div class="catalog__card1__img">
-                <img src="img/card2_chair.png" alt="chair1" />
-              </div>
-              <div class="catalog__card1__header">
-                <h3>Loft Armchair</h3>
-                <p>219 €</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="catalog__card1">
-              <div class="catalog__card1__img">
-                <img src="img/card3_chair.png" alt="chair1" />
-              </div>
-              <div class="catalog__card1__header">
-                <h3>Grey Armchair</h3>
-                <p>329 €</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="catalog__card1">
-              <div class="catalog__card1__img">
-                <img src="img/card1_chair.png" alt="chair1" />
-              </div>
-              <div class="catalog__card1__header">
-                <h3>Article Armchair</h3>
-                <p>259 €</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="catalog__card1">
-              <div class="catalog__card1__img">
-                <img src="img/card2_chair.png" alt="chair1" />
-              </div>
-              <div class="catalog__card1__header">
-                <h3>Loft Armchair</h3>
-                <p>219 €</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="catalog__card1">
-              <div class="catalog__card1__img">
-                <img src="img/card3_chair.png" alt="chair1" />
-              </div>
-              <div class="catalog__card1__header">
-                <h3>Grey Armchair</h3>
-                <p>329 €</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
         </div>
       </div>
     </section>
@@ -187,12 +218,12 @@
     <section class="aboutus" id="aboutus">
       <div class="container">
         <div class="row">
-          <div class="col-md-2">
+          <div class="col-lg-2 col-md-3">
             <div class="aboutus__header">
               <h2>About Us</h2>
             </div>
           </div>
-          <div class="offset-md-2 col-md-7">
+          <div class="offset-lg-2 offset-md-1 col-lg-7 col-md-7">
             <div class="aboutus__text">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -201,61 +232,74 @@
                 nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                 in reprehenderit in voluptate velit esse cillum dolore eu
               </p>
-              <button class="transparent__button">Read More</button>
+              <a href="./about.html"
+                ><button class="transparent__button">Read More</button></a
+              >
             </div>
-            
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="aboutus__card">
               <div class="aboutus__card__img">
-                <img src="img/icons/furniture.png" alt="Furniture">
+                <img src="img/icons/furniture.png" alt="Furniture" />
               </div>
               <div class="aboutus__card__info">
                 <h3>280 Models</h3>
                 <div class="text">
-                <p>Mab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
-              </div>
+                  <p>
+                    Mab illo inventore veritatis et quasi architecto beatae
+                    vitae dicta sunt.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="aboutus__card">
               <div class="aboutus__card__img">
-                <img src="img/icons/stock.png" alt="Furniture">
+                <img src="img/icons/stock.png" alt="Furniture" />
               </div>
               <div class="aboutus__card__info">
                 <h3>5 Factories</h3>
                 <div class="text">
-                <p>Sed quia non numquam eius modi tempora incidunt ut labore et dolore.</p>
-              </div>
+                  <p>
+                    Sed quia non numquam eius modi tempora incidunt ut labore et
+                    dolore.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="aboutus__card">
               <div class="aboutus__card__img">
-                <img src="img/icons/shipping.png" alt="Furniture">
+                <img src="img/icons/shipping.png" alt="Furniture" />
               </div>
               <div class="aboutus__card__info">
                 <h3>Free shipping</h3>
                 <div class="text">
-                <p>Ut enim ad minima veniam, nostrum exercitationem ullam corporis suscipit.</p>
-              </div>
+                  <p>
+                    Ut enim ad minima veniam, nostrum exercitationem ullam
+                    corporis suscipit.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="aboutus__card">
               <div class="aboutus__card__img">
-                <img src="img/icons/bed.png" alt="Furniture">
+                <img src="img/icons/bed.png" alt="Furniture" />
               </div>
               <div class="aboutus__card__info">
                 <h3>Individual work</h3>
                 <div class="text">
-                <p>Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut.</p>
-              </div>
+                  <p>
+                    Consectetur, adipisci velit, sed quia non numquam eius modi
+                    tempora incidunt ut.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -268,18 +312,21 @@
         <h2>Our Blog</h2>
         <div class="blog__content">
           <div class="row">
-            <div class="col-md-6">
-              <img src="img/blog_photo.jpg" alt="Blog Photo">
+            <div class="col-lg-6 col-md-12">
+              <img src="img/blog_photo.jpg" alt="Blog Photo" />
             </div>
-            <div class="col-md-6"> 
+            <div class="col-lg-6 col-md-12">
               <div class="blog__content__info">
-                <h3>Colour Coordinating 
-                  your Space.</h3>
-                <p class="blog__content__info__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim.</p>
+                <h3>Colour Coordinating your Space.</h3>
+                <p class="blog__content__info__text">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim.
+                </p>
                 <button class="transparent__button">Read More</button>
                 <p class="blog__content__date">23 July, 2021</p>
-              </div> 
-              
+              </div>
             </div>
           </div>
         </div>
@@ -290,36 +337,39 @@
       <div class="container">
         <h2>Photo reviews</h2>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-6">
             <div class="gallery__smallphoto">
-              <img src="img/gallery_smallphoto1.png" alt="Photo 1">
+              <img src="./img/gallery_smallphoto1.png" alt="Photo 1" />
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-6">
             <div class="gallery__smallphoto">
-              <img src="img/gallery_smallphoto2.png" alt="Photo 1">
+              <img src="./img/gallery_smallphoto2.png" alt="Photo 2" />
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-12">
             <div class="gallery__smallphoto">
-              <img src="img/gallery_smallphoto3.png" alt="Photo 1">
+              <img src="./img/gallery_smallphoto3.png" alt="Photo 3" />
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6">
             <div class="gallery__largephoto">
-              <img src="img/gallery_largephoto1.png" alt="Photo 1">
+              <img src="./img/gallery_largephoto1.png" alt="Photo 4" />
             </div>
           </div>
           <div class="col-md-6">
             <div class="gallery__largephoto">
-              <img src="img/gallery_largephoto2.png" alt="Photo 1">
+              <img src="./img/gallery_largephoto2.png" alt="Photo 5" />
             </div>
           </div>
         </div>
         <div class="center">
-        <button class="transparent__button">Show more</button></div>
+          <a href="./gallery.html"
+            ><button class="transparent__button">Show more</button></a
+          >
+        </div>
       </div>
     </section>
 
@@ -328,30 +378,51 @@
         <div class="row">
           <div class="offset-md-1 col-md-5">
             <div class="form__text">
-            <p>If you have any questions, write to us and we will answer you in <b class="bold__text">40 minutes!</b></p>
+              <p>
+                If you have any questions, write to us and we will answer you in
+                <b class="bold__text">40 minutes!</b>
+              </p>
             </div>
             <form action="" method="post">
               <div class="userName">
-                <label for="name" ></label>
-                <input type="text" id="name" name="user_name" placeholder="Your Name">
+                <label for="name"></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="user_name"
+                  placeholder="Your Name"
+                />
               </div>
+
               <div class="userMail">
                 <label for="mail"></label>
-                <input type="email" id="mail" name="user_email" placeholder="Your E-mail">
+                <input
+                  type="email"
+                  id="mail"
+                  name="user_email"
+                  placeholder="Your E-mail"
+                />
               </div>
-            
+
               <div class="userMsg">
                 <label for="msg"></label>
-                <input type="text" id="msg" name="user_message" placeholder="Message"></input>
+                <input
+                  type="text"
+                  id="msg"
+                  name="user_message"
+                  placeholder="Message"
+                />
               </div>
 
               <div class="form_button">
-                <button class="filled_button" type="submit">Send message</button>
+                <button class="filled_button" type="submit">
+                  Send message
+                </button>
               </div>
             </form>
           </div>
-          <div class=" col-md-5">
-            <img src="img/form_photo.png" alt="Form Photo">
+          <div class="col-md-5">
+            <img src="img/form_photo.png" alt="Form Photo" />
           </div>
         </div>
       </div>
@@ -361,36 +432,44 @@
       <div class="container">
         <div class="footer__line"></div>
         <div class="row">
-          <div class="col-md-2">
-            <img src="img/icons/Full_logo.svg" alt="Logo">
+          <div class="col-md-2 mobile-hide">
+            <img src="img/icons/Full_logo.svg" alt="Logo" />
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 mobile-hide">
             <h4>Information</h4>
             <div class="line_height">
-              <p>About Us</p>
+              <a href="./about.html"><p>About Us</p></a>
               <p>Contacts</p>
               <p>Social</p>
+            </div>
           </div>
-          </div>
-          <div class="col-md-1">
+          <div class="col-md-1 mobile-hide">
             <h4>Offers</h4>
             <div class="line_height">
-              <p>Home</p>
-              <p>Catalog</p>
-          </div>
+              <a href="./index.html"><p>Home</p></a>
+              <a href="./catalog.html"><p>Catalog</p></a>
+            </div>
           </div>
           <div class="offset-md-1 col-md-2">
             <div class="footer__social">
-            <img src="img/icons/twitter.svg" alt="Twitter">
-            <img src="img/icons/facebook.svg" alt="Facebook">
-            <img src="img/icons/youtube.svg" alt="YouTube">
+              <a href="https://twitter.com"
+                ><img src="img/icons/twitter.svg" alt="Twitter"
+              /></a>
+              <a href="https://facebook.com"
+                ><img src="img/icons/facebook.svg" alt="Facebook"
+              /></a>
+              <a href="https://youtube.com"
+                ><img src="img/icons/youtube.svg" alt="YouTube"
+              /></a>
+            </div>
           </div>
-          </div>
-          <div class="offset-md-1 col-md-3 d-flex align-items-end flex-column">
+          <div
+            class="offset-md-1 col-md-3 d-flex align-items-end flex-column mobile-center"
+          >
             <h3 class="footer__address">Le Parc De Manon 3 floor</h3>
             <div class="line_height">
               <p>+38 (099) 11 22 333</p>
-              <p>+38 (093) 22 44 555</p>  
+              <p>+38 (093) 22 44 555</p>
             </div>
             <p class="footer__mail">uCom_Marsel@gmail.com</p>
           </div>
