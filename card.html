@@ -42,14 +42,14 @@
     <header class="header" id="header">
       <div class="container">
         <div class="row">
-          <div class="col-md-2">
+          <div class="col-md-2 col-sm-4">
             <div class="logo1">
               <a href="./index.html"
                 ><img src="img/icons/logo1.svg" alt="uCom"
               /></a>
             </div>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 col-sm-3">
             <div class="list">
               <ul>
                 <li class="link"><a href="./index.html">Home</a></li>
@@ -59,9 +59,12 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-5 d-flex justify-content-end be-static bucket">
-            <img src="./img/icons/Bucket.png" alt="Bucket" />
-            <p class="bucket_price_holder">0 €</p>
+          <div
+            class="col-md-2 offset-md-3 offset-sm-1 col-sm-3 d-flex justify-content-end be-static"
+          >
+            <img src="img/icons/Bucket.svg" alt="Bucket" class="bucket" />
+            <p class="bucket_price_holder bucket">0 €</p>
+            <div class="burger"><span></span></div>
           </div>
         </div>
       </div>
@@ -81,7 +84,7 @@
     <section class="cardInfo">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-xl-6 col-lg-12">
             <div class="swiper">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
@@ -112,7 +115,7 @@
               <div class="swiper-button-next"></div>
             </div>
 
-            <div class="swiper smallSwiper">
+            <div class="swiper smallSwiper mobile-hide">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -142,7 +145,7 @@
               <div class="swiper-button-next"></div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-xl-6 col-lg-12">
             <div class="card_header d-flex justify-content-between">
               <h2 class="name">Loft Armchair</h2>
               <h3 class="price">329 €</h3>
@@ -187,7 +190,7 @@
             </div>
           </div>
         </div>
-        <div class="long-description">
+        <div class="long-description mobile-hide">
           <h2>Loft Armchair</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -217,10 +220,10 @@
       <div class="container">
         <div class="footer__line"></div>
         <div class="row">
-          <div class="col-md-2">
+          <div class="col-md-2 mobile-hide">
             <img src="img/icons/Full_logo.svg" alt="Logo" />
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 mobile-hide">
             <h4>Information</h4>
             <div class="line_height">
               <a href="./about.html"><p>About Us</p></a>
@@ -228,7 +231,7 @@
               <p>Social</p>
             </div>
           </div>
-          <div class="col-md-1">
+          <div class="col-md-1 mobile-hide">
             <h4>Offers</h4>
             <div class="line_height">
               <a href="./index.html"><p>Home</p></a>
@@ -248,7 +251,9 @@
               /></a>
             </div>
           </div>
-          <div class="offset-md-1 col-md-3 d-flex align-items-end flex-column">
+          <div
+            class="offset-md-1 col-md-3 d-flex align-items-end flex-column mobile-center"
+          >
             <h3 class="footer__address">Le Parc De Manon 3 floor</h3>
             <div class="line_height">
               <p>+38 (099) 11 22 333</p>
@@ -259,6 +264,7 @@
         </div>
       </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/card.js"></script>
   </body>
