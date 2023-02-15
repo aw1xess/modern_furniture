@@ -18,20 +18,18 @@
     <link rel="stylesheet" href="css/catalog.css" />
     <title>Catalog</title>
   </head>
-  <body>
+  <body class="body">
     <header class="header" id="header">
       <div class="container">
         <div class="row">
-          <div class="col-md-2">
+          <div class="col-md-2 col-sm-4">
             <div class="logo1">
               <a href="./index.html"
                 ><img src="img/icons/logo1.svg" alt="uCom"
               /></a>
-              <!--<span class="line"></span>
-                  <div class="name">uCom</div>-->
             </div>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 col-sm-3">
             <div class="list">
               <ul>
                 <li class="link"><a href="./index.html">Home</a></li>
@@ -41,10 +39,13 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-5 d-flex justify-content-end be-static">
+          <div
+            class="col-md-1 offset-md-4 offset-sm-2 col-sm-3 d-flex justify-content-end be-static"
+          >
             <div class="bucket">
               <img src="img/icons/Bucket.png" alt="Bucket" />
             </div>
+            <div class="burger"><span></span></div>
           </div>
         </div>
       </div>
@@ -72,7 +73,7 @@
         <h3 class="quantity">27 Products</h3>
         <div class="cards">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="catalog__card1">
                 <div class="catalog__card1__img">
                   <img src="img/catalog/card1_chair.png" alt="chair1" />
@@ -83,7 +84,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="catalog__card1">
                 <div class="catalog__card1__img">
                   <img src="img/catalog/card2_chair.png" alt="chair2" />
@@ -94,7 +95,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="catalog__card1">
                 <div class="catalog__card1__img">
                   <img src="img/catalog/card3_chair.png" alt="chair3" />
@@ -107,7 +108,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="catalog__card1">
                 <div class="catalog__card1__img">
                   <img src="img/catalog/card4_chair.png" alt="chair4" />
@@ -118,7 +119,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="catalog__card1">
                 <div class="catalog__card1__img">
                   <img src="img/catalog/card5_chair.png" alt="chair5" />
@@ -129,7 +130,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="catalog__card1">
                 <div class="catalog__card1__img">
                   <img src="img/catalog/card6_chair.png" alt="chair6" />
@@ -142,7 +143,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="catalog__card1">
                 <div class="catalog__card1__img">
                   <img src="img/catalog/card7_chair.png" alt="chair7" />
@@ -153,7 +154,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="catalog__card1">
                 <div class="catalog__card1__img">
                   <img src="img/catalog/card8_chair.png" alt="chair8" />
@@ -164,7 +165,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="catalog__card1">
                 <div class="catalog__card1__img">
                   <img src="img/catalog/card9_chair.png" alt="chair9" />
@@ -188,10 +189,10 @@
       <div class="container">
         <div class="footer__line"></div>
         <div class="row">
-          <div class="col-md-2">
+          <div class="col-md-2 mobile-hide">
             <img src="img/icons/Full_logo.svg" alt="Logo" />
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 mobile-hide">
             <h4>Information</h4>
             <div class="line_height">
               <a href="./about.html"><p>About Us</p></a>
@@ -199,7 +200,7 @@
               <p>Social</p>
             </div>
           </div>
-          <div class="col-md-1">
+          <div class="col-md-1 mobile-hide">
             <h4>Offers</h4>
             <div class="line_height">
               <a href="./index.html"><p>Home</p></a>
@@ -219,7 +220,9 @@
               /></a>
             </div>
           </div>
-          <div class="offset-md-1 col-md-3 d-flex align-items-end flex-column">
+          <div
+            class="offset-md-1 col-md-3 d-flex align-items-end flex-column mobile-center"
+          >
             <h3 class="footer__address">Le Parc De Manon 3 floor</h3>
             <div class="line_height">
               <p>+38 (099) 11 22 333</p>
@@ -230,6 +233,7 @@
         </div>
       </div>
     </footer>
+
     <script src="./js/catalog.js"></script>
   </body>
 </html>
