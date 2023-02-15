@@ -124,7 +124,7 @@ header {
 .dark {
   display: none;
   z-index: 99;
-  height: 100vw;
+  height: 200vw;
   width: 100vw;
   position: fixed;
   background: rgba(0, 0, 0, 0.5);
@@ -135,17 +135,17 @@ header {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1.5%;
-  height: 700px;
+  height: 95vh;
   width: 600px;
   background: #eeece8;
   z-index: 100;
   overflow-y: scroll;
 }
-/* e6dfd3 */
+
 .plashka {
   background-color: #ffffff;
   position: fixed;
-  bottom: 11px;
+  bottom: 2vh;
   width: inherit;
   max-width: 590px;
   padding: 15px;
@@ -371,4 +371,161 @@ footer {
 .footer__mail {
   margin-top: 16px;
   font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+  .cart {
+    width: 50vw;
+  }
+
+  .swiper {
+    margin-right: auto;
+    margin-left: auto;
+    width: 96vw;
+  }
+
+  .smallSwiper {
+    width: 70vw;
+  }
+
+  .card_header {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cart {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+
+  .list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    justify-items: center;
+    background: #eeece8;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+  }
+
+  .list ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .list ul li {
+    margin-top: 50px;
+    font-size: 26px;
+  }
+
+  .mobile-none {
+    display: none;
+  }
+
+  .visible {
+    display: flex;
+  }
+
+  header {
+    text-align: center;
+    position: relative;
+  }
+
+  .logo1 {
+    text-align: left;
+  }
+
+  .cart {
+    width: 70vw;
+  }
+
+  .burger {
+    width: 40px;
+    z-index: 2;
+  }
+
+  .burger span {
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    background-color: #000;
+    top: 51px;
+    right: 20px;
+    transition: all 0.1s ease 0s;
+  }
+
+  .burger span::before,
+  .burger span::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    background-color: #000;
+    right: 0px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .burger span::before {
+    top: -8px;
+  }
+
+  .burger span::after {
+    top: 8px;
+  }
+
+  .burger span.active {
+    width: 0px;
+  }
+
+  .burger span.active:before {
+    transform: rotate(45deg);
+    scale: 1.2;
+    top: 0px;
+  }
+
+  .burger span.active:after {
+    transform: rotate(-45deg);
+    scale: 1.2;
+    top: 0px;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
+  footer {
+    margin-top: 60px;
+  }
+
+  .footer__social {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    scale: 1.5;
+    margin-top: 10px;
+  }
+
+  .mobile-center {
+    align-items: center !important;
+  }
+
+  .footer__address {
+    margin-top: 39px;
+    margin-bottom: 0;
+  }
+
+  .footer__mail {
+    margin-top: 0;
+  }
 }
