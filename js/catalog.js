@@ -2,6 +2,9 @@ const loadNineButton = document.querySelector(".loadNine");
 const loadAllButton = document.querySelector(".loadAll");
 const cards = document.querySelector(".cards");
 const cardList = document.getElementsByClassName("catalog__card1");
+const body = document.querySelector(".body");
+const burger = document.querySelector(".burger");
+const menu = document.querySelector(".list");
 let temp = 0;
 const chairs = {
   "Article Armchair": "259 €",
@@ -24,7 +27,7 @@ function loadNineCards() {
     cards.appendChild(row);
 
     for (let j = i; j < i + 3; j++) {
-      const colMd4 = document.createElement("div");
+      const col = document.createElement("div");
       const card = document.createElement("div");
       const cardImg = document.createElement("div");
       const img = document.createElement("img");
@@ -35,14 +38,16 @@ function loadNineCards() {
       cardName.textContent = keys[j % 9];
       cardPrice.textContent = chairs[keys[j % 9]];
 
-      colMd4.classList.add("col-md-4");
+      col.classList.add("col-lg-4");
+      col.classList.add("col-md-6");
+      col.classList.add("col-sm-6");
       card.classList.add("catalog__card1");
       cardImg.classList.add("catalog__card1__img");
       cardHeader.classList.add("catalog__card1__header");
 
       img.setAttribute("src", `/img/catalog/card${j + 1}_chair.png`);
-      row.appendChild(colMd4);
-      colMd4.appendChild(card);
+      row.appendChild(col);
+      col.appendChild(card);
       card.appendChild(cardImg);
       cardImg.appendChild(img);
       card.appendChild(cardHeader);
@@ -66,7 +71,7 @@ function loadAllCards() {
     cards.appendChild(row);
 
     for (let j = i; j < i + 3; j++) {
-      const colMd4 = document.createElement("div");
+      const col = document.createElement("div");
       const card = document.createElement("div");
       const cardImg = document.createElement("div");
       const img = document.createElement("img");
@@ -77,14 +82,16 @@ function loadAllCards() {
       cardName.textContent = keys[j % 9];
       cardPrice.textContent = chairs[keys[j % 9]];
 
-      colMd4.classList.add("col-md-4");
+      col.classList.add("col-lg-4");
+      col.classList.add("col-md-6");
+      col.classList.add("col-sm-6");
       card.classList.add("catalog__card1");
       cardImg.classList.add("catalog__card1__img");
       cardHeader.classList.add("catalog__card1__header");
 
       img.setAttribute("src", `/img/catalog/card${j + 1}_chair.png`);
-      row.appendChild(colMd4);
-      colMd4.appendChild(card);
+      row.appendChild(col);
+      col.appendChild(card);
       card.appendChild(cardImg);
       cardImg.appendChild(img);
       card.appendChild(cardHeader);
@@ -106,4 +113,12 @@ for (card of cardList) {
   });
 }
 
-console.log(cardList);
+function openMenu() {
+  menu.classList.toggle("visible");
+  body.classList.toggle("lock");
+  burger.childNodes.forEach((child) => {
+    child.classList.toggle("active");
+  });
+}
+
+burger.addEventListener("click", openMenu);
