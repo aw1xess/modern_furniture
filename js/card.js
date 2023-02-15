@@ -35,6 +35,8 @@ const cartItemName = document.querySelector(".name");
 const cartList = document.querySelector(".cart-list");
 const bucketPriceHolder = document.querySelector(".bucket_price_holder");
 const deleteAllButton = document.querySelector(".delete-all");
+const burger = document.querySelector(".burger");
+const menu = document.querySelector(".list");
 let cartItemDelete = document.createElement("p");
 cartItemDelete.classList.add("delete");
 cartItemDelete.textContent = "Delete";
@@ -121,6 +123,15 @@ function DeleteAllItems() {
   console.log(cartItemDeleteList);
 }
 
+function openMenu() {
+  menu.classList.toggle("visible");
+  body.classList.toggle("lock");
+  burger.childNodes.forEach((child) => {
+    child.classList.toggle("active");
+  });
+}
+
+burger.addEventListener("click", openMenu);
 bucket.addEventListener("click", openCart);
 dark.addEventListener("click", closeCart);
 
